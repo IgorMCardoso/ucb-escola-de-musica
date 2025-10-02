@@ -12,10 +12,20 @@ public class pianoExercicio extends instrumentoMusical {
     public void tocar() {
         System.out.println("Tocando uma bela melodia no " + nome + " com " + numeroTeclas + " teclas");
     
-
+    }
     @Override
     public void afinar() {
         super.afinar();
         System.out.println("Ajustando a tensão das cordas internas do piano");
+    }
+
+    @Override
+    public void mostrarInformacoes (){
+        super.mostrarInformacoes();
+        System.out.println("Número de teclas " + numeroTeclas);
+    }
+
+    public int getNumeroTeclas() {
+        return numeroTeclas;
     }
 }
